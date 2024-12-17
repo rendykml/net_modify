@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documentation - UDP Broadcast Simulation</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code&display=swap"
+    />
+    <link rel="stylesheet" href="src/css/styles.css" />
+    <link rel="stylesheet" href="src/css/documentation.css" />
+  </head>
+  <body>
+    <!-- Background -->
+    <div class="background">
+      <div class="background-overlay"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="nav-logo">
+          <img src="src/assets/network-icon.svg" alt="Network Icon" />
+          <span>UDP Broadcast Simulator</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Simulation</a></li>
+          <li><a href="documentation.html" class="active">Documentation</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container documentation">
+      <h1>Documentation</h1>
+
+      <div class="doc-section">
+        <h2>UDP Broadcast Overview</h2>
+        <div class="doc-content">
+          <div class="doc-image">
+            <img
+              src="src/assets/docs/udp-diagram.png"
+              alt="UDP Broadcast Diagram"
+            />
+            <p class="image-caption">
+              Figure 1: UDP Broadcast Communication Flow
+            </p>
+          </div>
+          <p>
+            UDP (User Datagram Protocol) broadcasting is a method of network
+            communication where data packets are sent to all devices within a
+            network segment.
+          </p>
+        </div>
+      </div>
+
+      <div class="doc-section">
+        <h2>How to Use the Simulator</h2>
+        <div class="doc-content">
+          <div class="doc-image">
+            <img
+              src="src//assets/docs/simulator-guide.png"
+              alt="Simulator Guide"
+            />
+            <p class="image-caption">Figure 2: Simulator Interface Guide</p>
+          </div>
+          <ol class="steps">
+            <li>Select a source device from the dropdown menu</li>
+            <li>Enter your broadcast message in the text field</li>
+            <li>Click "Send Broadcast" to simulate the transmission</li>
+            <li>Observe the network log for transmission details</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="doc-section">
+        <h2>Network Topology</h2>
+        <div class="doc-content">
+          <div class="doc-image">
+            <img
+              src="src/assets/docs/network-topology.png"
+              alt="Network Topology"
+            />
+            <p class="image-caption">Figure 3: Network Topology Diagram</p>
+          </div>
+          <p>
+            The simulator demonstrates a simple network with three devices
+            connected to the same subnet, enabling broadcast communication
+            between all nodes.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="src/js/documentation.js"></script>
+  </body>
+</html>

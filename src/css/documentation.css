@@ -1,0 +1,63 @@
+/* Documentation Page Styles */
+.documentation {
+    padding: 40px;
+}
+
+.doc-section {
+    margin-bottom: 50px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.doc-section h2 {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e1e4e8;
+}
+
+.doc-content {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+    .doc-content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.doc-image {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.doc-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.image-caption {
+    text-align: center;
+    
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.steps {
+    padding-left: 20px;
+}
+
+.steps li {
+    margin-bottom: 15px;
+    line-height: 1.6;
+   
+}
